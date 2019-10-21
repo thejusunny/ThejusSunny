@@ -2022,15 +2022,16 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 3px rgba(255, 255, 255, 0.15);
 		background: rgba(255, 255, 255, 0.05);
 		margin: 0 0 2em 0;
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 3.5em 3em 1em 0em ;
 			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: solid 
+			px rgba(255, 255, 255, 0.15);
 			position: relative;
 		}
 
@@ -2823,8 +2824,9 @@ input, select, textarea {
 /* Contact */
 	.imgborder
 	{
-		border-width: 3px;
+		border-width: 10px;
 		border-color: black;
+		border-radius: 15%;
 
 	}
 	ul.contact {
