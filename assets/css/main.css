@@ -2650,7 +2650,20 @@ input, select, textarea {
 
 /* List */
 
-	ol {
+ul {
+	margin: 0;
+  }
+  ul.dashed {
+	list-style-type: none;
+  }
+  ul.dashed > li {
+	text-indent: -5px;
+  }
+  ul.dashed > li:before {
+	content: "-";
+	text-indent: -5px;
+  }	
+ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;

@@ -16,12 +16,11 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Personal project</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="index.html"><b>Home</b></a></li>
+						
 					</ul>
 				</nav>
 			</header>
@@ -32,10 +31,31 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h2 class="major">Dialogue system </h2>
+							<span class="image fit"><iframe width="900" height="480" src="https://www.youtube.com/embed/6PuZfk_Vxuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+							<p>This Dialogue system is used to facilitate conversations in  the game between player and NPCs .The system is completely based on scriptable object architecture, coupled with delegate pattern(Events and sets). This system also lets the player make choices and has branching features. The system comes with the feature to setup subtitles to match the offset of the clips.</p>
+						
+							<p><b>Brief</b></p>
+							<p>The building block of the system is a Node, a node could be :-</p>
+							<p>- Dialogue<br>
+								- Choice</p>
+							<p>The system is classified based on sequential dialogues and relational dialogues.</p>
+							<p><b>Sequential system</b></p>
+							<p>Sequential system uses a dialogue sequencer class to traverse through a list of the predefined dialogue sequences or choices.
+								The head of the sequencer moves as you invoke play(similar to a list traversal). </p>
+							<img src="images/sequence.png"></img>
+							<p><b>Relational system</b></p>
+							<p>This model uses direct relation between the dialogue caster and receiver instead of  linear sequences which means there could be infinite no of branches or routes during the conversation. 
+								Here, each character has its own database which holds the collection of possible dialogues or choices he/she could make.
+								Each node has a header packet, which contains who is it casting the dialogue to and awaits for  a response.
+								Each conversation is uniquely identified by Conversation header/ start node.</p>
+							
+							<p>Below is a character database for specific level</p>
+							<img src="images/relation.png"></img>
+							
+							
+					
+								
 						</div>
 					</section>
 
