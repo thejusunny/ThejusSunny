@@ -70,9 +70,20 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
 .container img {
 	border-radius:50%;
-	max-width: 100%;
+	max-width: 80%;
+	max-height:80%;
+
+}
+
+.game-icon
+{
+
+	border-radius:15%;
+	max-width: 80%;
+	max-height:80%;
 
 }
 .img-icon
@@ -133,7 +144,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
 		font-family: Tahoma, Helvetica, sans-serif;
-		font-size: 19.5pt;
+		font-size: 15pt;
 		font-weight: normal;
 		line-height: 1.75;
 	}
